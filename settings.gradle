@@ -16,6 +16,7 @@ include 'api'
 include 'services:webservice'
 */
 
+include 'webserver'
 include 'emscripten-container'
 
 rootProject.name = 'hybrid-judge'
