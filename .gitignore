@@ -6,3 +6,9 @@
 build/
 !gradle-wrapper.jar
 
+# eclipse related
+.classpath
+.project
+.settings/
+bin/
+
