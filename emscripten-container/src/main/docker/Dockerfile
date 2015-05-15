@@ -11,6 +11,8 @@ RUN sed -i s/archive/jp.archive/g /etc/apt/sources.list
 RUN apt-get update && apt-get install -y \
     emscripten
 
+COPY emcc-wrapper.js /usr/bin/emcc-wrapper
+
 # warm up emscripten
 COPY sample.c /tmp/emscripten/sample.c
 WORKDIR /tmp/emscripten
