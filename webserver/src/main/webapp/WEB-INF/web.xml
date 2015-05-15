@@ -3,13 +3,23 @@
 	xmlns="http://java.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	id="idvalue0" metadata-complete="true" version="3.0">
+
 	<servlet>
 		<servlet-name>GreetingServlet</servlet-name>
 		<servlet-class>name.haochenxie.hybridjudge.servlet.GreetingServlet</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>GreetingServlet</servlet-name>
 		<url-pattern>/hello</url-pattern>
 	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CompileWithWrapperServlet</servlet-name>
+		<servlet-class>name.haochenxie.hybridjudge.servlet.CompileWithWrapperServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CompileWithWrapperServlet</servlet-name>
+		<url-pattern>/compile0</url-pattern>
+	</servlet-mapping>
+
 </web-app>
